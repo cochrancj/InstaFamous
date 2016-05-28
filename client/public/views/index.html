@@ -3,29 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title> InstaFamous </title>
-    <!-- Local styles -->
+<!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<!-- Local styles -->
     <link rel="stylesheet" href="/css/styles.css">
-
-    <!-- jQuery lib -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" charset="utf-8"></script>
-    <!-- Cookies lib -->
+<!-- Cookies lib -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.1/js.cookie.min.js" charset="utf-8"></script>
-    <script src="/js/scripts.js" charset="utf-8"></script>
+<!-- Sets Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-    <h1> InstaFamous </h1>
+    <div class="container">
+      <h1> InstaFamous </h1>
+      <div class="row">
+        <form id="make-quote" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Grab Quote</button>
+            </div>
+            <div class="input-field col s6">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Grab Image</button>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Combine</button>
+        </form>
+      </div>
+<!-- Submit A Quote Form  -->
+      <hr>
+      THIS IS A STRETCH GOAL
+      <hr>
+      <div class="row">
+        <form id="new-quote" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="quote" type="text" class="validate" name="title">
+              <label for="quote">Favorite Quote</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="who" type="text" class="validate" name="who">
+              <label for="who">Who Said It?</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        </form>
+      </div>
+<!-- Quote Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Be InstaFamous</a>
 
-    <form id="new-quote">
-      <p>Quote</p>
-      <input type="text" name="title">
-      <p>Who Said It?</p>
-      <input type="text" name="who">
+<!-- Quote Modal Structure -->
+      <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>I'm. So. Famous. </h4>
+          <p>Post your quote on Insta for quintillions of new followers.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Make Another</a>
+        </div>
+      </div>
 
-      <button type="submit" name="button">Log in</button>
-    </form>
-
-    <div class="quote">
     </div>
-
+<!-- jQuery lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" charset="utf-8"></script>
+<!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.js"></script>
+<!-- Local JS  -->
+    <script src="/js/scripts.js" charset="utf-8"></script>
   </body>
 </html>
